@@ -1,0 +1,549 @@
+.nav {
+  margin: 27px auto 0;
+  position: relative;
+  width: 500px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+
+.nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+a:nth-child(2) {
+  width: 110px;
+}
+
+a:nth-child(3) {
+  width: 100px;
+}
+
+a:nth-child(4) {
+  width: 130px;
+}
+
+.nav .start-home,
+a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+
+.nav .start-about,
+a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+
+.nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+  width: 150px;
+  left: 300px;
+  background-color: #9b59b6;
+}
+
+/* .body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
+} */
+
+.name {
+  text-align: center;
+  margin: 40px 0 40px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Cherry Swash', cursive;
+}
+
+.h4c {
+  text-align: center;
+  color: black;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 24px;
+}
+
+span {
+  color: #2BD6B4;
+}
+
+
+
+
+/* Profile */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.profile {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* 
+.container {
+  width: 60%;
+  align-items: center;
+  margin: auto;
+} */
+
+
+.profile-container {
+  width: 80%;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  /* background-color: aliceblue; */
+}
+
+@keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-webkit-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-moz-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-o-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+.bar {
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+  content: attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+  background-color: #ffcc33;
+}
+
+.bar.back::before {
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+
+/* contact me */
+body {
+  background: burlywood;
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5em;
+}
+
+#contact {
+  width: 700px;
+  margin: 2em auto auto auto;
+  background: white;
+  position: relative;
+}
+
+#contact::after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 90%;
+  left: 5%;
+  bottom: 0;
+  position: absolute;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+#contact article {
+  padding: 1em;
+}
+
+#contact h3 {
+  background: #6EC1E4;
+  font-family: Oswald, sans-serif;
+  font-size: 1.75em;
+  padding: 0.6em 0 0.6em 0.4em;
+  color: white;
+  /* text-shadow: 0 0.06em 0 ; */
+  position: relative;
+  text-align: center;
+}
+
+.contactbutton {
+  background: #6EC1E4;
+  -webkit-box-shadow: 1px 1px 0 0 #6EC1E4, 2px 2px 0 0 #6EC1E4, 3px 3px 0 0 #6EC1E4;
+  box-shadow: 1px 1px 0 0 #6EC1E4, 2px 2px 0 0 #6EC1E4, 3px 3px 0 0 #6EC1E4;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.contactbutton:hover {
+  -webkit-box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+  box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+  margin-top: 22px;
+  margin-left: 2px;
+  margin-bottom: 0px;
+}
+
+.mail {
+  margin-top: 11px;
+  font-size: 15px;
+  display: inline-block;
+  border-top: 2em solid transparent;
+  border-left: 2.6em solid white;
+  height: 0;
+  width: 0;
+  position: relative;
+}
+
+.mail:before {
+  content: '';
+  top: -2.5em;
+  left: -2.95em;
+  display: block;
+  position: absolute;
+  border-top: 1.2em solid white;
+  border-left: 1.6em solid transparent;
+  border-right: 1.6em solid transparent;
+  border-bottom: 1em solid transparent;
+  font-size: 0.8em;
+}
+
+.mail::after {
+  display: block;
+  content: "";
+  position: absolute;
+  border-top: 2em solid transparent;
+  border-right: 2.6em solid white;
+  height: 0;
+  width: 0;
+  left: -2.18em;
+  bottom: 0;
+}
+
+#checkcontact {
+  position: absolute;
+  left: -9999px;
+}
+
+.contactform {
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -o-transition: all linear 1s;
+  -ms-transition: all linear 1s;
+  transition: all linear 1s;
+}
+
+#checkcontact:checked+.contactform {
+  max-height: 1000px;
+}
+
+.input_wrapper {
+  position: relative;
+}
+
+.textarea_wrapper textarea {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid #DADADA;
+  box-shadow: 0 0 1px 0 #E4E4E4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5E5E5E;
+}
+
+.input_wrapper input[type="text"] {
+  margin-top: 1em;
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid #DADADA;
+  box-shadow: 0 0 1px 0 #E4E4E4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5E5E5E;
+  text-indent: 15%;
+}
+
+.input_wrapper input[type="email"] {
+  margin-top: 1em;
+  display: block;
+  width: 100%;
+  background: white;
+  border: 1px solid #DADADA;
+  box-shadow: 0 0 1px 0 #E4E4E4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5E5E5E;
+  text-indent: 15%;
+}
+
+.input_wrapper input[type="text"]:focus {
+  background: rgba(242, 56, 90, 0.05);
+  box-shadow: inset 2px 2px 5px 0 #DADADA;
+  outline: none;
+  text-indent: 0;
+}
+
+.input_wrapper input[type="email"]:focus {
+  background: rgba(242, 56, 90, 0.05);
+  box-shadow: inset 2px 2px 5px 0 #DADADA;
+  outline: none;
+  text-indent: 0;
+}
+
+.input_wrapper label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #6EC1E4;
+  color: white;
+  font-family: Oswald, sans-serif;
+  box-sizing: border-box;
+  width: 15%;
+  text-align: center;
+  line-height: 2.8em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.input_wrapper input[type="text"]:focus+label {
+  left: 85%;
+}
+
+.input_wrapper input[type="email"]:focus+label {
+  left: 85%;
+}
+
+.textarea_wrapper textarea {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  background: white;
+  border: 1px solid #DADADA;
+  box-shadow: 0 0 1px 0 #E4E4E4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  color: #5E5E5E;
+}
+
+.textarea_wrapper textarea:focus {
+  background: rgba(242, 56, 90, 0.05);
+  box-shadow: inset 2px 2px 5px 0 #DADADA;
+  outline: none;
+}
+
+.submit_wrapper {
+  text-align: center;
+}
+
+.submit_wrapper input {
+  text-align: center;
+  display: inline-block;
+  width: 40%;
+  height: 50px;
+  margin-top: 1em;
+  margin-bottom: 6px;
+  cursor: pointer;
+  background: #6EC1E4;
+  color: white;
+  font-family: Oswald, sans-serif;
+  font-size: 1em;
+  border: none;
+  -webkit-box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+  box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+  -webkit-appearance: none;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.submit_wrapper input:hover {
+  -webkit-box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+  box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+  margin-top: 22px;
+  margin-left: 2px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 500px) {
+  #contact {
+    width: 100%;
+  }
+
+  .input_wrapper label {
+    line-height: 3.5em;
+    font-size: 0.8em;
+  }
+}
+
+
+/* WIP */
+.wip {
+  text-align: center;
+}
