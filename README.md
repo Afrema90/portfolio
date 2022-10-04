@@ -7,6 +7,7 @@ Site is divided into several sections, including About Me, My Work, and Contact 
 I included functioning navigation links at the top of the page to take the user to any of the sections
 I included a recent photo of myself.
 The skill section on my page are skills that i am proficiant in.
+
 <img width="732" alt="Screen Shot 2022-10-03 at 11 20 04 PM" src="https://user-images.githubusercontent.com/112598840/193727502-0dd481bb-f184-419f-89cc-f7726d3513a4.png">
 <img width="441" alt="Screen Shot 2022-10-03 at 11 20 42 PM" src="https://user-images.githubusercontent.com/112598840/193727505-d59d3cf1-867d-4b7c-b98e-d4fbe2fca327.png">
 <img width="659" alt="Screen Shot 2022-10-03 at 11 21 08 PM" src="https://user-images.githubusercontent.com/112598840/193727507-e5f55064-e9ac-489f-a847-3b8e23bd01d6.png">
